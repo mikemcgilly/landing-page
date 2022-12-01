@@ -7,7 +7,7 @@ body {
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 300px;
+    padding-left: 22.77rem;
     padding-right: 300px;
 }
 
@@ -15,6 +15,7 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     flex: 1;
+    /* padding-left: 3rem; */
 }
 
 .header-links {
@@ -27,34 +28,47 @@ body {
     display: flex;
     background-color: #1F2937;
     color: white;
-    padding-left: 300px;
+    padding-left: 20rem;
     padding-right: 300px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    gap: 1rem;
+    /* border: 5px solid yellowgreen; */
 }
 
 .hero-main-text {
     font-size: 48px;
-    /* need to make extra bold but moving on */ 
+    font-weight: bolder;
 }
 
 .hero-col-1 {
     flex: 1;
-    /* gap: 16px; doesnt seem to do anything*/
+    padding: 2rem;
+    /* border: 5px solid blue; */
 }
 
 .hero-col-2 {
-  justify-content: space-between;
+    padding: 1rem;
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: center;
+}
+
+.hero-button {
+    padding: 8px;
 }
 
 .hero-button button {
     background-color: #3882F6;
     color: white;
-    
-    padding-left: 16px;
-    padding-right: 16px;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-color: #3882F6;
-    border-radius: 7px;
+    border-radius: 7px; 
+    border: 1px solid #3882F6;
 }
 
 .body {
@@ -67,8 +81,13 @@ body {
 .body-images {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 16px;
+    gap: 3px;
+    /* border: 5px solid blue; */
+    justify-content:center;
+}
+
+.body-images p {
+    text-align: center;
 }
 
 .image-text-pair-1,
@@ -77,25 +96,106 @@ body {
 .image-text-pair-4 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content:space-evenly; */
+    /* border: 5px solid green; */
+    /* padding: 3px; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 200px;
 }
 
 .quote-section {
     display: flex;
     flex-direction: column;
     background-color: #E5E7EB;
-    padding: 16px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .quote {
+    justify-content: center;
     align-items: center;
     font-size: 36px;
     font-style: italic;
-    padding-left: 500px;
-    padding-right: 500px;
+    color: #1F2937;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .quote-attribution {
-    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: 5px solid green; */
+    padding-bottom: 5rem;
+    padding-right: 350px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: 5px solid yellow; */
+    color: white;
+    padding: 3rem;
+}
+
+.text-portion-cta {
+    /* flex:1; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: #3882F6;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-bottom: 3rem;
+}
+
+.button-cta {
+    display: flex;
+    /* border: 5px solid yellowgreen; */
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #3882F6;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-bottom: 3rem;
+}
+
+.button-cta button {
+    align-items: center;
+    justify-content: center;
+    background-color: #3882F6;
+    color: white;
+    font-weight: bold;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* border-color: white; */
+    border-radius: 7px; 
+    border: 1px solid white;
+    
+}
+
+.footer {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 ul {
@@ -106,4 +206,15 @@ ul {
 
 a {
     color: white;
+}
+/* 
+div {
+    border: 5px solid firebrick;
+} */
+
+.body-images img {
+    /* max-width: fit-content; */
+    /* max-width: min-content; */
+    max-width: 300px;
+    height:auto;
 }
